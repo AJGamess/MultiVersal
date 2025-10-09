@@ -1,8 +1,49 @@
-[gd_scene load_steps=2 format=3 uid="uid://31eetfarshal"]
+[gd_scene load_steps=7 format=3 uid="uid://31eetfarshal"]
+
+[ext_resource type="Texture2D" uid="uid://bik512wcejq2" path="res://Assets/Characters/Char_3.png" id="1_rpqav"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kyqiw"]
+radius = 9.0
+height = 40.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gntrk"]
+atlas = ExtResource("1_rpqav")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dewec"]
+atlas = ExtResource("1_rpqav")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ixxa"]
+atlas = ExtResource("1_rpqav")
+region = Rect2(320, 0, 64, 64)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_qbkls"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gntrk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dewec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ixxa")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 4.0
+}]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D"]
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="HitBox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -21)
+shape = SubResource("CapsuleShape2D_kyqiw")
+
+[node name="CharacterSprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -22)
 sprite_frames = SubResource("SpriteFrames_qbkls")
+animation = &"Idle"
+autoplay = "Idle"
+frame_progress = 0.592456
