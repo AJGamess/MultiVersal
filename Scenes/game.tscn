@@ -1,3 +1,29 @@
-[gd_scene format=3 uid="uid://b44uysg1h2ewq"]
+[gd_scene load_steps=4 format=3 uid="uid://b44uysg1h2ewq"]
+
+[ext_resource type="PackedScene" uid="uid://31eetfarshal" path="res://Scenes/Player.tscn" id="1_ebmjs"]
+[ext_resource type="Texture2D" uid="uid://co06p03hi6kxd" path="res://Assets/Backgrounds/Brickston.jpg" id="2_qxrlw"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]
 
 [node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ebmjs")]
+position = Vector2(232, 559)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(233, 540)
+zoom = Vector2(3, 3)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(238, 647)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_ebmjs")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Brickston" type="Sprite2D" parent="CanvasLayer"]
+position = Vector2(576.5, 323.5)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("2_qxrlw")
