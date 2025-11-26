@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://cs86r7lwna4l5"]
+
+[ext_resource type="Texture2D" uid="uid://b2dhna7gyr83" path="res://Assets/Characters/Placeholder/TheDummyAnim-SpriteSheet.png" id="1_lbjl7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17wxa"]
+atlas = ExtResource("1_lbjl7")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nm0se"]
+atlas = ExtResource("1_lbjl7")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_skq3i"]
+atlas = ExtResource("1_lbjl7")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2t4yw"]
+atlas = ExtResource("1_lbjl7")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gfrdw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17wxa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nm0se")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_skq3i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2t4yw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3oa00"]
+height = 46.0
+
+[node name="EnemyPlaceholder" type="CharacterBody2D"]
+scale = Vector2(4, 4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gfrdw")
+autoplay = "default"
+frame_progress = 0.866662
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 9)
+shape = SubResource("CapsuleShape2D_3oa00")
