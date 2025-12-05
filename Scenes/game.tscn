@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b44uysg1h2ewq"]
+[gd_scene load_steps=6 format=3 uid="uid://b44uysg1h2ewq"]
 
 [ext_resource type="PackedScene" uid="uid://31eetfarshal" path="res://Scenes/Player.tscn" id="1_ebmjs"]
+[ext_resource type="PackedScene" uid="uid://vp0hlwb28g8" path="res://Scenes/FightingGameCamera.tscn" id="2_3dryh"]
 [ext_resource type="Texture2D" uid="uid://co06p03hi6kxd" path="res://Assets/Backgrounds/Brickston.jpg" id="2_qxrlw"]
 [ext_resource type="PackedScene" uid="uid://cs86r7lwna4l5" path="res://Scenes/enemy_placeholder.tscn" id="3_wrm1d"]
 
@@ -10,6 +11,7 @@
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = -1
+follow_viewport_enabled = true
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 offset_right = 1280.0
@@ -17,14 +19,12 @@ offset_bottom = 720.0
 scale = Vector2(0.89895, 0.899888)
 texture = ExtResource("2_qxrlw")
 
-[node name="Player" parent="." instance=ExtResource("1_ebmjs")]
-position = Vector2(232, 559)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(575.25, 431.91)
-zoom = Vector2(1.5, 1.5)
-limit_left = 0
-limit_right = 1151
+[node name="FightingCamera" parent="." node_paths=PackedStringArray("player", "opponent") instance=ExtResource("2_3dryh")]
+position = Vector2(577, 325)
+zoomOffset = 1.0
+debugMode = true
+player = NodePath("../Player")
+opponent = NodePath("../EnemyPlaceholder")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(238, 646.45)
@@ -32,5 +32,8 @@ position = Vector2(238, 646.45)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_ebmjs")
 
+[node name="Player" parent="." instance=ExtResource("1_ebmjs")]
+position = Vector2(171, 564)
+
 [node name="EnemyPlaceholder" parent="." instance=ExtResource("3_wrm1d")]
-position = Vector2(849, 523)
+position = Vector2(788, 430)

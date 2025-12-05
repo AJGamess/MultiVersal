@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scenes\\FightingGameCamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scenes\\FightingGameCamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\fightinggamecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|solutionrelative:scripts\\fightinggamecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -40,13 +40,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "FightingGameCamera.cs",
-              "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scenes\\FightingGameCamera.cs",
-              "RelativeDocumentMoniker": "Scenes\\FightingGameCamera.cs",
-              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scenes\\FightingGameCamera.cs",
-              "RelativeToolTip": "Scenes\\FightingGameCamera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\FightingGameCamera.cs",
+              "RelativeDocumentMoniker": "Scripts\\FightingGameCamera.cs",
+              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\FightingGameCamera.cs",
+              "RelativeToolTip": "Scripts\\FightingGameCamera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T16:48:21.262Z",
+              "WhenOpened": "2025-12-03T11:31:25.777Z",
               "EditorCaption": ""
             },
             {
