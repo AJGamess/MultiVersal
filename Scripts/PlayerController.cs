@@ -1,12 +1,16 @@
 using Godot;
 using System;
 
-public partial class PlayerMovement : CharacterBody2D
+public partial class PlayerController : CharacterBody2D
 {
 	public const float Speed = 120.0f;
 	public const float JumpVelocity = -300.0f;
 
-	public override void _PhysicsProcess(double delta)
+    public int health = 100;
+    public int meleeDamage = 5;
+    public int rangedDamage = 3;
+
+    public override void _PhysicsProcess(double delta)
 	{
 		Vector2 velocity = Velocity;
 
