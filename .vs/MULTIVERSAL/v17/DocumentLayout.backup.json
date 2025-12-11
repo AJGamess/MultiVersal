@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|solutionrelative:scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\hitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|solutionrelative:scripts\\hitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\hurtbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|solutionrelative:scripts\\hurtbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|solutionrelative:scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E97BB3B0-9AC0-46E5-B541-807E557B3382}|MultiVersal.csproj|c:\\nu\\y3\\q1\\pro390 - capstone\\godot\\multiversal\\scripts\\fightinggamecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,34 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Scripts\\PlayerController.cs",
-              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\PlayerController.cs",
-              "RelativeToolTip": "Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T01:39:20.45Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FightingGameCamera.cs",
-              "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\FightingGameCamera.cs",
-              "RelativeDocumentMoniker": "Scripts\\FightingGameCamera.cs",
-              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\FightingGameCamera.cs",
-              "RelativeToolTip": "Scripts\\FightingGameCamera.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T11:31:25.777Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -72,26 +46,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Scripts\\PlayerController.cs",
+              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\PlayerController.cs",
+              "RelativeToolTip": "Scripts\\PlayerController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAcwFUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T01:39:20.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FightingGameCamera.cs",
+              "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\FightingGameCamera.cs",
+              "RelativeDocumentMoniker": "Scripts\\FightingGameCamera.cs",
+              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\FightingGameCamera.cs",
+              "RelativeToolTip": "Scripts\\FightingGameCamera.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T11:31:25.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "HurtBox.cs",
               "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\HurtBox.cs",
               "RelativeDocumentMoniker": "Scripts\\HurtBox.cs",
-              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\HurtBox.cs*",
-              "RelativeToolTip": "Scripts\\HurtBox.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\HurtBox.cs",
+              "RelativeToolTip": "Scripts\\HurtBox.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T15:47:57.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Hitbox.cs",
               "DocumentMoniker": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\Hitbox.cs",
               "RelativeDocumentMoniker": "Scripts\\Hitbox.cs",
               "ToolTip": "C:\\NU\\Y3\\Q1\\PRO390 - Capstone\\Godot\\multiversal\\Scripts\\Hitbox.cs",
               "RelativeToolTip": "Scripts\\Hitbox.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-08T08:24:50.501Z",
               "EditorCaption": ""

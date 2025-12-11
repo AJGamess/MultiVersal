@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://b44uysg1h2ewq"]
+[gd_scene load_steps=8 format=3 uid="uid://b44uysg1h2ewq"]
 
 [ext_resource type="PackedScene" uid="uid://31eetfarshal" path="res://Scenes/Player.tscn" id="1_ebmjs"]
 [ext_resource type="PackedScene" uid="uid://vp0hlwb28g8" path="res://Scenes/FightingGameCamera.tscn" id="2_3dryh"]
@@ -6,6 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://cs86r7lwna4l5" path="res://Scenes/enemy_placeholder.tscn" id="3_wrm1d"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ebmjs"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3dryh"]
+distance = -238.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_wowpa"]
+distance = -619.0
 
 [node name="Game" type="Node2D"]
 
@@ -29,8 +35,17 @@ opponent = NodePath("../EnemyPlaceholder")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(238, 646.45)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+[node name="Ground" type="CollisionShape2D" parent="StaticBody2D"]
 shape = SubResource("WorldBoundaryShape2D_ebmjs")
+
+[node name="LeftBarrier" type="CollisionShape2D" parent="StaticBody2D"]
+rotation = 1.5708
+shape = SubResource("WorldBoundaryShape2D_3dryh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(294, -30.45)
+rotation = -1.5708
+shape = SubResource("WorldBoundaryShape2D_wowpa")
 
 [node name="Player" parent="." instance=ExtResource("1_ebmjs")]
 position = Vector2(171, 564)

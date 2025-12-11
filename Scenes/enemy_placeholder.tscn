@@ -1,6 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cs86r7lwna4l5"]
+[gd_scene load_steps=11 format=3 uid="uid://cs86r7lwna4l5"]
 
+[ext_resource type="Script" uid="uid://bkvtfqp1xjef2" path="res://Scripts/EnemyController.cs" id="1_17wxa"]
 [ext_resource type="Texture2D" uid="uid://b2dhna7gyr83" path="res://Assets/Characters/Placeholder/TheDummyAnim-SpriteSheet.png" id="1_lbjl7"]
+[ext_resource type="Script" uid="uid://0s4ceohdfnir" path="res://Scripts/HurtBox.cs" id="3_nm0se"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_17wxa"]
 atlas = ExtResource("1_lbjl7")
@@ -41,14 +43,27 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3oa00"]
 height = 46.0
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_skq3i"]
+height = 44.5
+
 [node name="EnemyPlaceholder" type="CharacterBody2D"]
 scale = Vector2(4, 4)
+script = ExtResource("1_17wxa")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -32.25)
 sprite_frames = SubResource("SpriteFrames_gfrdw")
 autoplay = "default"
 frame_progress = 0.866662
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 9)
+position = Vector2(0, -24.25)
 shape = SubResource("CapsuleShape2D_3oa00")
+
+[node name="HurtBox" type="Area2D" parent="."]
+position = Vector2(0, -24.25)
+script = ExtResource("3_nm0se")
+metadata/_custom_type_script = "uid://0s4ceohdfnir"
+
+[node name="HurtBoxShape" type="CollisionShape2D" parent="HurtBox"]
+shape = SubResource("CapsuleShape2D_skq3i")
